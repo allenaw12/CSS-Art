@@ -39,5 +39,42 @@
     top: -50%;
 }
 .windshield {
-    
+    position: relative;
+    background-color: aqua;
+    height: 100px;
+    width: 15px;
+    border-top-right-radius: 30%;
+    right: -88%;
+    top: -70%
+}
+.side {
+    position: relative;
+    background-color: navy;
+    width: 81%;
+    height: 90px;
+    left: 10%;
+    bottom: 70%;
+}
+.wheel {
+    position: absolute;
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.f {
+    bottom: 45%;
+    left: 75%;
+}
+.b {
+    bottom: 45%;
+    left: 25%
+}
+.text {
+    position: absolute;
+    color: goldenrod;
+    font: bold 40px 'sans serif';
+    z-index: 1;
+    bottom: 57%;
+    left: 15%; 
 }

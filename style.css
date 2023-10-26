@@ -1,15 +1,15 @@
 .tram {
     position: relative;
-    width: 60%;
-    height: 500px;
-    border: 5px solid black;
-    margin: 10px auto;
+    max-width: 60%;
+    min-width: 30rem;
+    height: 30rem;
+    border: .5rem solid black;
+    margin: 1rem auto;
 }
 .top {
-    position: relative;
+    position: absolute;
     background-color: rgb(235, 188, 130);
-    /* border: 2px solid rgb(159, 99, 25); */
-    height: 10px;
+    height: 1rem;
     width: 80%;
     top: 10%;
     left: 10%;
@@ -17,64 +17,70 @@
     border-top-left-radius: 50%;
 }
 .pole {
-    position: relative;
+    position: absolute;
     background-color: gray;
-    width: 8px;
-    height: 100px;
+    width: .8rem;
+    height: 10rem;
+    top: 13%;
 }
 .back {
     left: 11%;
-    top: 10%;
 }
 .midback {
     left: 31%;
-    top: -10%;
 }
 .midfront {
     left: 51%;
-    top: -30%;
 }
 .front {
     left: 71%;
-    top: -50%;
 }
 .windshield {
-    position: relative;
+    position: absolute;
     background-color: aqua;
-    height: 100px;
-    width: 15px;
+    height: 10rem;
+    width: 1.5rem;
     border-top-right-radius: 30%;
-    right: -88%;
-    top: -70%
+    right: 10%;
+    top: 13%
 }
 .side {
-    position: relative;
+    position: absolute;
     background-color: navy;
     width: 81%;
-    height: 90px;
+    height: 9rem;
     left: 10%;
-    bottom: 70%;
+    bottom: 25%;
 }
 .wheel {
     position: absolute;
     background-color: black;
-    height: 60px;
-    width: 60px;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
+    bottom: 17%;
 }
-.f {
-    bottom: 45%;
-    left: 75%;
+.fore {
+    right: 20%;
 }
-.b {
-    bottom: 45%;
-    left: 25%
+.aft {
+    left: 20%
 }
 .text {
     position: absolute;
     color: goldenrod;
-    font: bold 40px 'sans serif';
+    font: bold 2rem 'sans serif';
+    
     z-index: 1;
-    bottom: 57%;
-    left: 15%; 
+    bottom: 40%;
+    left: 15%;
+    border-top: .3rem solid goldenrod;
+    border-bottom: .3rem solid goldenrod;
+}
+
+/*////////MEDIA QUERIES////////////*/
+@media screen and (min-width:600px){
+    .text {
+        font-size: calc(2rem + 2vw);
+    }
 }
